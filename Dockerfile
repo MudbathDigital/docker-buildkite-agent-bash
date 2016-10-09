@@ -1,6 +1,6 @@
 FROM buildkite/agent:alpine-docker-1.11.1
 
-RUN apk --no-cache add bash gawk sed grep bc coreutils \
+RUN apk --no-cache add bash gawk sed grep bc coreutils jq \
 	groff less python py-pip
 
 RUN \
