@@ -1,6 +1,6 @@
-FROM buildkite/agent:2
+FROM cl0sey/buildkite-agent:beta
 
-RUN apk --no-cache add bash gawk sed grep bc coreutils jq \
-	groff less python py-pip && \
+RUN apk --no-cache add gawk sed grep bc coreutils \
+	groff less python && \
 	mkdir -p /aws && \
 	pip install awscli
